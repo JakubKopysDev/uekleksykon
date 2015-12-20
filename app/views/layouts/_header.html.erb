@@ -1,0 +1,28 @@
+<div class="header">
+
+    <div class="logo">
+        <div class="logo_cont">
+
+            <%= link_to root_path do %>
+                <div class="logo_risk"></div>
+            <% end %>
+            <div style="width: 50px; float: left; height: 100%;"></div>
+            <%= link_to "http://uek.krakow.pl", target: "_blank" do %>
+                <div class="logo_uek"></div>
+            <% end %>
+
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="menu_cont">
+            <ul id="men">
+                <li><%= link_to "O NAS", about_path %></li>
+                <li><%= link_to "AKTUALNOŚCI", posts_path %></a></li>
+                <li><%= link_to "LEKSYKON POJĘĆ UBEZPIECZENIOWYCH", "#" %></li>
+                <li><%= link_to "KONTAKT", contact_path %></li>
+            </ul>
+        </div>
+    </div>
+
+</div>

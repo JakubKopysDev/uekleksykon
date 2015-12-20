@@ -1,0 +1,247 @@
+/* ***************************** HEADER AND LOGO **************************** */
+.logo
+{
+    width: 100%;
+    height: 170px;
+    background-color: #fbfbfb;
+}
+.logo_cont
+{
+    width: 880px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo_risk
+{
+    background-image: image-url('risk.png');
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 500px;
+    float: left;
+}
+.logo_uek
+{
+    background-image: image-url('uek.png');
+    background-repeat: no-repeat;
+    height: 100%;
+    float: left;
+    width: 330px;
+}
+.menu
+{
+    height: 55px;
+    box-shadow: 0px 0px 10px 0px gray;
+    padding: 1px;
+    margin-bottom: 15px;
+    background-color: #7D85E8;
+}
+.menu_cont
+{
+    width: 800px;
+    height: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul#men
+{
+     list-style-type: none;
+    margin-left: 0px;
+}
+ul#men a:visited
+{
+    text-decoration: none;
+}
+ul#men a
+{
+    text-decoration: none;
+    color: white;
+    transition-timing-function: ease-out;
+    transition: color 0.25s;
+}
+ul#men a:hover
+{
+    color: #CACEFE;
+}
+ul#men a:active
+{
+    text-decoration: none;
+}
+ul#men > li
+{
+    padding: 0px 8px 0px 8px;
+    border-left-style: solid;
+    border-left-color: white;
+    border-left-width: 1px;
+    display: inline-block;
+}
+ul#men >li:first-child
+{
+    border-left: none;
+    margin-left: auto;
+}
+ul#men >li:last-child
+{
+    margin-right: auto;
+}
+.content
+{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    height: auto;
+}
+/* ***************************** HEADER AND LOGO END **************************** */
+
+/* ***************************** FOOTER ********************************************* */
+.foot
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+.footwrap
+{
+    float: left;
+    font-size: 12px;
+    color: #b9b9c1;
+    margin-left: 25px;
+    border-left-style: solid;
+    border-left-color: #b9b9b9;
+    border-width: 1px;
+    padding-left: 5px;
+    height: 100%;
+    display: table;
+}
+.footer
+{
+    height: 70px;
+    color: white;
+    background-color: #24283c;
+    box-shadow: 0px 0px 10px 0px #24283c;
+}
+.foot_pict
+{
+    background-image: image-url('foot.png');
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 74px;
+    float: left;
+}
+.foot_text_wrap
+{
+    display: table;
+    height: 100%;
+}
+.foot_text
+{
+    background-color: #24283c;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.foot_wrap
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 100%;
+}
+/* ***************************** FOOTER END **************************************** */
+
+/* ***************************** NEWS *********************************************** */
+.content_other
+{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    height: auto;
+}
+.wrapbox
+{
+    width: 360px;
+    height: 180px;
+    float: left;
+    margin: 14px;
+}
+.box
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    transition-timing-function: ease;
+    transition: opacity 0.5s;
+    padding: 10px;
+}
+.box:hover
+{
+    opacity: 1;
+}
+.b_date
+{
+    color: #24283c;
+    font-size: 12;
+}
+.b_info
+{
+    color: #24283c;
+    font-size: 13px;
+    text-align: left;
+}
+
+.content_other {
+  .wrapbox {
+    h1
+    {
+        font-weight: bold;
+        font-size: 20px;
+        color: #E97824;
+        transition-timing-function: ease;
+        transition: color 0.5s;
+    }
+    h1:hover
+    {
+        color: #24283c;
+    }
+  }
+}
+.news {
+  font-size: 0.9rem;
+  .pagination {
+    margin: 20px 20px 0 0;
+    float: right;
+    span.disabled {
+      padding: 2.5px 5px;
+      border: 1px solid lighten(black, 40%);
+    }
+    a.previous_page {
+      padding: 2.5px 5px;
+      border: 1px solid lighten(gray, 20%);
+      text-decoration: none;
+    }
+    a.next_page {
+      padding: 2.5px 5px;
+      border: 1px solid lighten(gray, 20%);
+      text-decoration: none;
+    }
+    em {
+      padding: 2.5px 5px;
+      border: 1px solid lighten(black, 30%);
+      color: lighten(black, 30%);
+      font-style: normal;
+    }
+    a {
+      padding: 2.5px 5px;
+      border: 1px solid lighten(gray, 20%);
+      color: darken(#f5f5f5, 40%);
+    }
+  }
+}
+/* ***************************** NEWS END ***************************************** */
+
