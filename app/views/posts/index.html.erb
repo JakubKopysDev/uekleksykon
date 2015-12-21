@@ -4,22 +4,22 @@
   </div>
     <div class="con_con">
     <% @posts.each do |post| %>
-    <%= link_to post do %>
-      <div class="wrapbox">
+      <%= link_to post do %>
+        <div class="wrapbox">
 
-        <div class="box">
-          <div class="box_cont">
-              <div class="b_date"><%= post.created_at.strftime("%d-%m-%Y") %></div>
-            <div class="b_info">
+          <div class="box">
+            <div class="box_cont">
+                <div class="b_date"><%= post.created_at.strftime("%d-%m-%Y") %></div>
+              <div class="b_info">
 
-            <%= render post %>
+              <%= render post %>
 
+              </div>
             </div>
           </div>
-        </div>
 
-      </div>
-    <% end %>
+        </div>
+      <% end %>
     <% end %>
     </div>
     <%= will_paginate @posts, class: "pagination bottom", :previous_label => '←', :next_label => '→' %>

@@ -1,0 +1,19 @@
+<div class="content_other">
+  <div class="new_post">
+    <%= form_for @post do |f| %>
+
+      <div class="field">
+      <%= f.label :title, "Tytuł" %><br>
+      <%= f.text_field :title %>
+      </div>
+
+      <div class="field">
+      <%= f.label :content, "Zawartość" %><br>
+      <%= f.text_area :content %>
+      </div>
+
+      <%= f.submit "Edytuj" %>
+
+    <% end %>
+  </div>
+</div>

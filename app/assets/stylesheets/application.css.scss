@@ -26,7 +26,190 @@ hr
   color: #24283C;
   background-image: image-url("background.png");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
+  background-size: contain;
   text-align: left;
   height: 624px;
 }
+/* ***************************** HEADER AND LOGO **************************** */
+.logo
+{
+    width: 100%;
+    height: 170px;
+    background-color: #fbfbfb;
+}
+.logo_cont
+{
+    width: 880px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo_risk
+{
+    background-image: image-url('risk.png');
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 500px;
+    float: left;
+}
+.logo_uek
+{
+    background-image: image-url('uek.png');
+    background-repeat: no-repeat;
+    height: 100%;
+    float: left;
+    width: 330px;
+}
+.menu
+{
+    height: 55px;
+    box-shadow: 0px 0px 10px 0px gray;
+    padding: 1px;
+    margin-bottom: 15px;
+    background-color: #7D85E8;
+}
+.menu_cont
+{
+    width: 800px;
+    height: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul#men
+{
+     list-style-type: none;
+    margin-left: 0px;
+}
+ul#men a:visited
+{
+    text-decoration: none;
+}
+ul#men a
+{
+    text-decoration: none;
+    color: white;
+    transition-timing-function: ease-out;
+    transition: color 0.25s;
+}
+ul#men a:hover
+{
+    color: #CACEFE;
+}
+ul#men a:active
+{
+    text-decoration: none;
+}
+ul#men > li
+{
+    padding: 0px 8px 0px 8px;
+    border-left-style: solid;
+    border-left-color: white;
+    border-left-width: 1px;
+    display: inline-block;
+}
+ul#men >li:first-child
+{
+    border-left: none;
+    margin-left: auto;
+}
+ul#men >li:last-child
+{
+    margin-right: auto;
+}
+.content
+{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    height: auto;
+}
+/* ***************************** HEADER AND LOGO END **************************** */
+
+/* ***************************** FOOTER ********************************************* */
+.foot
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+.footwrap
+{
+    float: left;
+    font-size: 12px;
+    color: #b9b9c1;
+    margin-left: 25px;
+    border-left-style: solid;
+    border-left-color: #b9b9b9;
+    border-width: 1px;
+    padding-left: 5px;
+    height: 100%;
+    display: table;
+}
+.footer
+{
+    height: 70px;
+    color: white;
+    background-color: #24283c;
+    box-shadow: 0px 0px 10px 0px #24283c;
+}
+.foot_pict
+{
+    background-image: image-url('foot.png');
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 74px;
+    float: left;
+}
+.foot_text_wrap
+{
+    display: table;
+    height: 100%;
+}
+.foot_text
+{
+    background-color: #24283c;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.foot_wrap
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 100%;
+}
+/* ***************************** FOOTER END **************************************** */
+
+/* ***************************** FLASH NOTICES ETC ******************************** */
+
+.notice {
+  text-align: center;
+  padding: 10px;
+  color: #9F6000;
+  background-color: #FEEFB3;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.danger {
+  text-align: center;
+  padding: 10px;
+  background-color: #e46767;
+  color: #c32222;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.success {
+  background-color: #79ce4b;
+  color: #4a8c26;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+
+/* ***************************** FLASH NOTICES ETC END *************************** */

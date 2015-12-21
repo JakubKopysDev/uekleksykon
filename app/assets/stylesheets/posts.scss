@@ -1,3 +1,35 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.new_post {
+  .field {
+  margin: 10px 0;
+  width: 100%;
+    input {
+    width: 50%;
+    }
+    textarea {
+    width: 100%;
+    }
+  }
+}
+
+.admin_post {
+  margin-top: 10px;
+  text-align: center;
+  span {
+    border-radius: 10px;
+    padding: 4px 6px 4px 6px;
+    &.edit {
+      background-color: darken(#FEEFB3, 5%);
+      a {
+        text-decoration: none;
+        color: #9F6000;
+      }
+    }
+    &.delete {
+      background-color: #e46767;
+      a {
+        text-decoration: none;
+        color: #c32222;
+      }
+    }
+  }
+}

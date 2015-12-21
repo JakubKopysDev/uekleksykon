@@ -1,2 +1,8 @@
 <%= @post.title %><br>
 <%= @post.content %>
+<% if admin_signed_in? %>
+  <div class="admin_post">
+    <span class="edit"><%= link_to "Edit", edit_post_path(@post) %></span>
+    <span class="delete"><%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?"} %></span>
+  </div>
+<% end %>
