@@ -1,0 +1,50 @@
+<div class="terms">
+    <div class="content_other">
+              <div class="head_con">
+                  Leksykon pojeć ubezpieczeniowych
+              </div>
+              <div class="contact">
+                  <div class="search">
+                    <%= form_tag terms_path, method: 'get' do%>
+                      <%= autocomplete_field_tag :search, params[:search], autocomplete_term_phrase_terms_path %>
+                      <%= submit_tag "Search", name: nil %>
+                      <% if params[:search] %>
+                        <%= link_to "cancel", terms_path %>
+                      <% end %>
+                    <% end %>
+                 </div>
+                <ul class="letters">
+                     <li><%= link_to "A",  controller: "terms", method: "search", search: "a" %></li>
+                     <li><%= link_to "B", controller: "terms", method: "index", search: "b" %></li>
+                     <li><%= link_to "C", controller: "terms", method: "index", search: "c" %></li>
+                     <li><%= link_to "D", controller: "terms", method: "index", search: "d" %></li>
+                     <li><%= link_to "E", controller: "terms", method: "index", search: "e" %></li>
+                     <li><%= link_to "F", controller: "terms", method: "index", search: "f" %></li>
+                     <li><%= link_to "G", controller: "terms", method: "index", search: "g" %></li>
+                     <li><%= link_to "H", controller: "terms", method: "index", search: "h" %></li>
+                     <li><%= link_to "I", controller: "terms", method: "index", search: "i" %></li>
+                     <li><%= link_to "J", controller: "terms", method: "index", search: "j" %></li>
+                     <li><%= link_to "K", controller: "terms", method: "index", search: "k" %></li>
+                     <li><%= link_to "L", controller: "terms", method: "index", search: "l" %></li>
+                     <li><%= link_to "M", controller: "terms", method: "index", search: "m" %></li>
+                     <li><%= link_to "N", controller: "terms", method: "index", search: "n" %></li>
+                     <li><%= link_to "O", controller: "terms", method: "index", search: "o" %></li>
+                     <li><%= link_to "P", controller: "terms", method: "index", search: "p" %></li>
+                     <li><%= link_to "R", controller: "terms", method: "index", search: "r" %></li>
+                     <li><%= link_to "S", controller: "terms", method: "index", search: "s" %></li>
+                     <li><%= link_to "T", controller: "terms", method: "index", search: "t" %></li>
+                     <li><%= link_to "U", controller: "terms", method: "index", search: "u" %></li>
+                     <li><%= link_to "Y", controller: "terms", method: "index", search: "y" %></li>
+                     <li><%= link_to "Z", controller: "terms", method: "index", search: "z" %></li>
+                 </ul><hr>
+                  <ul class="words">
+                  <% @terms.each do |term| %>
+                    <%= link_to term do %>
+                    <li><%= term.phrase %></li>
+                    <% end %>
+                  <% end %>
+                  </ul>
+                  <%= will_paginate @terms, class: "pagination bottom", :previous_label => '←', :next_label => '→' %>
+             </div>
+              </div>
+</div>

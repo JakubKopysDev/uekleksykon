@@ -4,4 +4,10 @@
   Post.create!(title: title, content: content)
 end
 
+100.times do |n|
+  phrase = BetterLorem.w(2, true, true) + "- #{n}"
+  explanation = BetterLorem.p(1, true, true)
+  Term.create!(phrase: phrase, explanation: explanation)
+end
+
 Admin.create!(name: "admin", password: "foo14567bar")

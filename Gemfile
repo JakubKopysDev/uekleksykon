@@ -22,6 +22,7 @@ gem 'normalize-rails'
 gem 'rails4-autocomplete'
 gem 'jquery-ui-rails'
 gem 'rails3-jquery-autocomplete', '~> 1.0', '>= 1.0.15'
+gem 'betterlorem', '~> 0.1.2'
 
 group :development, :test do
   gem 'byebug'

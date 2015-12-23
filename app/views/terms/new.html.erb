@@ -1,0 +1,17 @@
+<%= form_for @term do |f| %>
+
+  <%= render 'shared/error_messages', object: f.object %>
+
+  <div class="field">
+    <%= f.label :phrase, "Termin" %><br>
+    <%= f.text_field :phrase %>
+  </div>
+
+  <div class="field">
+    <%= f.label :explanation, "Znaczenie" %><br>
+    <%= f.text_area :explanation %>
+  </div>
+
+  <%= f.submit "Dodaj termin" %>
+
+<% end %>

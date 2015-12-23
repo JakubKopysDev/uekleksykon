@@ -19,11 +19,11 @@
             <ul id="men">
                 <li><%= link_to "O NAS", about_path %></li>
                 <li><%= link_to "AKTUALNOŚCI", posts_path %></a></li>
-                <li><%= link_to "LEKSYKON POJĘĆ UBEZPIECZENIOWYCH", "#" %></li>
+                <li><%= link_to "LEKSYKON POJĘĆ UBEZPIECZENIOWYCH", terms_path %></li>
                 <li><%= link_to "KONTAKT", contact_path %></li>
                 <% if admin_signed_in? %>
                     <li><%= link_to "DODAJ NEWS'A", new_post_path %></li>
-                    <li><%= link_to "DODAJ TERMIN", "#" %></li>
+                    <li><%= link_to "DODAJ TERMIN", new_term_path %></li>
                     <li><%= link_to "WYLOGUJ", destroy_admin_session_path, method: :delete %></li>
                 <% end %>
             </ul>

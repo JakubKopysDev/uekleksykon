@@ -1,0 +1,77 @@
+.terms {
+  .search {
+    display: inline-block;
+    form {
+      margin: 20px 0 50px 0;
+      border-radius: 20px;
+        input[type=text] {
+          width: 300px;
+          border-radius: 0;
+          box-shadow: none;
+          border: 1px solid darken(#f5f5f5, 20%);
+          padding: 5px;
+        }
+      }
+    input[type=submit] {
+
+    }
+  }
+  ul.letters {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+  }
+  ul.words {
+    list-style-type: none;
+    margin: 20px 0 5px 0;
+    padding: 0px;
+  }
+  ul.letters a:active {
+    text-decoration: none;
+  }
+  ul.words a:active {
+    text-decoration: none;
+  }
+  ul.letters > li {
+    display: inline;
+    padding: 0px 2px;
+    font-size: 20px;
+    a {
+      text-decoration: none;
+    }
+  }
+  ul.words > li {
+    padding: 0px 2px;
+    font-size: 16px;
+    a {
+      text-decoration: none;
+    }
+  }
+  ul.words {
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+ul#ui-id-1 {
+  width: 295px;
+  list-style: none;
+  margin-left: 5px;
+  padding: 0;
+  border: 1px solid darken(#f5f5f5, 20%);
+  box-shadow: 2px 2px 3px #888888;
+  li {
+    width: 300px;
+    padding: 5px;
+    margin: 0;
+    background: lighten(#f5f5f5, 10%);
+    &:hover {
+      background: darken(#f5f5f5, 5%);
+    }
+  }
+}
+
+.ui-helper-hidden-accessible {
+  opacity: 0;
+}

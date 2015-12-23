@@ -8,4 +8,8 @@ Rails.application.routes.draw do
   get     'about'      => 'welcome#about'
 
   resources :posts
+  resources :terms do
+    get :autocomplete_term_phrase, :on => :collection
+  end
+
 end
