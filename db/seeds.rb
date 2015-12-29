@@ -1,6 +1,4 @@
-require 'yomu'
-require 'docx'
-require 'docx/html'
+
 
 def seed_file(file_name)
   File.open(File.join(Rails.root, "/app/assets/seed/#{file_name}"))

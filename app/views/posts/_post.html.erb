@@ -1,2 +1,2 @@
 <h1><%= post.title %></h1>
-<%= truncate(post.content, length: 200) %>
+<%= truncate(simple_format(post.content), escape: false, length: 200) %>

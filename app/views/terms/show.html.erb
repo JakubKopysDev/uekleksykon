@@ -1,1 +1,10 @@
+<div class="contact term content_other">
 <%= render @term %>
+<%= link_to "Powrót", terms_path %>
+<% if admin_signed_in? %>
+  <div class="admin_post">
+    <span class="edit"><%= link_to "Edit", edit_term_path(@term) %></span>
+    <span class="delete"><%= link_to "Delete", term_path(@term), method: :delete, data: { confirm: "Are you sure?"} %></span>
+  </div>
+<% end %>
+</div>

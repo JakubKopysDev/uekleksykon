@@ -1,5 +1,7 @@
 class TermsController < ApplicationController
 autocomplete :term, :phrase
+before_action :find_term, only: [:show, :edit, :destroy, :update]
+before_filter :authenticate_admin, only: [:edit, :destroy, :update, :new]
 
   def new
     @term = Term.new
@@ -17,7 +19,19 @@ autocomplete :term, :phrase
   def edit
   end
 
+  def update
+    if @term.update term_params
+      redirect_to terms_path
+      flash[:success] = "Term updated!"
+    else
+      redner 'edit'
+    end
+  end
+
   def destroy
+    @term.delete
+    redirect_to terms_path
+    flash[:notice] = "Term successfuly deleted."
   end
 
   def index
@@ -43,7 +57,6 @@ autocomplete :term, :phrase
   end
 
   def show
-    @term = Term.find(params[:id])
   end
 
   private
@@ -52,4 +65,14 @@ autocomplete :term, :phrase
       params.require(:term).permit(:phrase, :explanation)
     end
 
+    def find_term
+      @term = Term.find(params[:id])
+    end
+
+    def authenticate_admin
+      unless admin_signed_in?
+        redirect_to root_path
+        flash[:danger] = "Tylko administrator ma tu dostęp."
+      end
+    end
 end

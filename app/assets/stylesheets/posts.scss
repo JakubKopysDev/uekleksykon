@@ -33,3 +33,24 @@
     }
   }
 }
+.b_more
+{
+  font-family: 'Nodxto Sans', sans-serif;
+  color: #24283c;
+  font-size: 12;
+  text-align: right;
+  line-height: 50px;
+}
+.post {
+  color: #24283C;
+  h3 {
+    color: #24283C;
+    display: inline-block;
+    border-bottom: 3px solid #E97824;
+    padding: 0px;
+    margin: 10px 0 0 0;
+  }
+  a {
+    color: grey;
+  }
+}

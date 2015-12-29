@@ -4,10 +4,24 @@
  */
 
 CKEDITOR.editorConfig = function( config ) {
-	// Define changes to default configuration here. For example:
-	// config.language = 'fr';
-	// config.uiColor = '#AADC6E';
-  config.extraPlugins = 'mathjax';
-  config.mathJaxClass = 'equation';
-  onfig.mathJaxLib   = 'http://cdn.mathjax.org/mathjax/2.2-latest/MathJax.js?config=TeX-AMS_HTML';
+ config.extraPlugins = 'mathjax';
+ config.mathJaxClass = 'equation';
+ config.mathJaxLib   = 'http://cdn.mathjax.org/mathjax/2.2-latest/MathJax.js?config=TeX-AMS_HTML';
+   config.filebrowserBrowseUrl = "/ckeditor/attachment_files";
+  config.filebrowserFlashBrowseUrl = "/ckeditor/attachment_files";
+  config.filebrowserFlashUploadUrl = "/ckeditor/attachment_files";
+  config.filebrowserImageBrowseLinkUrl = "/ckeditor/pictures";
+  config.filebrowserImageBrowseUrl = "/ckeditor/pictures";
+  config.filebrowserImageUploadUrl = "/ckeditor/pictures";
+  config.filebrowserUploadUrl = "/ckeditor/attachment_files";
 };
+
+  CKEDITOR.config.toolbar= [
+    { name: 'basicstyles', items: [ 'Bold', 'Italic' ] },
+    { name: 'clipboard', items : [ 'Cut','Copy','Paste','-','Undo','Redo' ] },
+    { name: 'paragraph', items : [ 'NumberedList','BulletedList','-','Outdent','Indent','-','Blockquote',
+  '-','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock' ] },
+    { name: 'links', items : [ 'Link','Unlink','Anchor' ] },
+    { name: 'insert', items : [ 'Mathjax', 'Image','Table','HorizontalRule','Smiley','SpecialChar'] },
+    { name: 'basicstyles', items : [ 'Bold','Italic','Underline','Strike','Subscript','Superscript','-','RemoveFormat' ] }
+  ]

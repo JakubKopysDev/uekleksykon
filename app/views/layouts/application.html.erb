@@ -4,20 +4,22 @@
   <title>Uekleksykon</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag :application, 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'ckeditor/ckeditor.js' %>
   <%= csrf_meta_tags %>
+
 </head>
 <body>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.2-latest/MathJax.js?config=TeX-AMS_HTML"></script>
   <div class="container">
     <%= render 'layouts/header' %>
-    <div class="content_other">
       <% flash.each do |key, value| %>
         <%= content_tag :div, value, class: "flash #{key}" %>
       <% end %>
       <%= yield %>
-    </div>
     <%= render 'layouts/footer' %>
   </div>
 </body>
+<div id="preloadedImages"></div>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.2-latest/MathJax.js?config=TeX-AMS_HTML"></script>
+<script>
+      MathJax.Hub.Typeset();
+</script>
 </html>

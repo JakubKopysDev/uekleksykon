@@ -3,6 +3,7 @@
  *= require_tree .
  *= require_self
  */
+
 body
 {
     font-family: 'Noto Sans', sans-serif;
@@ -133,6 +134,7 @@ ul#men >li:last-child
 {
     display: table-cell;
     vertical-align: middle;
+    margin-bottom: 0;
 }
 .footwrap
 {
