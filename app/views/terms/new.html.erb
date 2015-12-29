@@ -1,6 +1,5 @@
-<%= form_for @term do |f| %>
+<%= form_for @term do |f| -%>
 
-  <%= render 'shared/error_messages', object: f.object %>
 
   <div class="field">
     <%= f.label :phrase, "Termin" %><br>
@@ -9,9 +8,9 @@
 
   <div class="field">
     <%= f.label :explanation, "Znaczenie" %><br>
-    <%= f.text_area :explanation %>
+    <%= f.cktext_area :explanation, :class => 'ckeditor' %>
   </div>
 
-  <%= f.submit "Dodaj termin" %>
+  <%= f.submit "Dodaj termin" -%>
 
 <% end %>

@@ -37,7 +37,8 @@ autocomplete :term, :phrase
         redirect_to :back
       end
     else
-      @terms = Term.all.order("phrase ASC").page(params[:page])
+      #@terms = Term.all.order("phrase ASC").page(params[:page])
+      @terms = Term.all.order("created_at DESC").page(params[:page])
     end
   end
 
