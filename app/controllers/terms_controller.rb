@@ -1,5 +1,5 @@
 class TermsController < ApplicationController
-autocomplete :term, :phrase
+autocomplete :term, :phrase, :limit => 5
 before_action :find_term, only: [:show, :edit, :destroy, :update]
 before_filter :authenticate_admin, only: [:edit, :destroy, :update, :new]
 
@@ -43,7 +43,7 @@ before_filter :authenticate_admin, only: [:edit, :destroy, :update, :new]
           @terms = Term.where(['substr(phrase, 1, 1) LIKE :search', search: "%#{params[:search]}%"]).order("phrase ASC").page(params[:page])
         end
         if @terms.count == 0
-          flash[:notice] = "No terms found."
+          flash[:notice] = "Nie znaleziono pojęć."
           redirect_to :back
         end
       else

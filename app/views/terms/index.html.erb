@@ -7,7 +7,7 @@
               <div class="contact">
                   <div class="search">
                     <%= form_tag terms_path, method: 'get' do%>
-                      <%= autocomplete_field_tag :search, params[:search], autocomplete_term_phrase_terms_path %>
+                      <%= autocomplete_field_tag :search, params[:search], autocomplete_term_phrase_terms_path, 'min-length' => 1 %>
                       <%= submit_tag "Search", name: nil %>
                       <% if params[:search] %>
                         <%= link_to "cancel", terms_path %>

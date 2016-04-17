@@ -32,6 +32,26 @@ hr
   text-align: left;
   height: 624px;
 }
+
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 7px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  &:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+  p {
+    display: inline;
+  }
+}
 /* ***************************** HEADER AND LOGO **************************** */
 .logo
 {
@@ -196,6 +216,15 @@ ul#men >li:last-child
   margin: 0 auto;
 }
 
+.alert {
+  text-align: center;
+  padding: 10px;
+  color: #9F6000;
+  background-color: #FEEFB3;
+  width: 50%;
+  margin: 0 auto;
+}
+
 .danger {
   text-align: center;
   padding: 10px;
@@ -212,6 +241,15 @@ ul#men >li:last-child
   margin: 0 auto;
   text-align: center;
   padding: 10px;
+}
+
+#error_explanation {
+  text-align: center;
+  padding: 10px;
+  color: #9F6000;
+  background-color: #FEEFB3;
+  width: 50%;
+  margin: 0 auto;
 }
 
 /* ***************************** FLASH NOTICES ETC END *************************** */
