@@ -7,6 +7,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'sqlite3'
+gem 'pg', '0.18.4'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.7'
@@ -16,7 +17,7 @@ gem 'will_paginate', '~> 3.0', '>= 3.0.7'
 gem 'aws-sdk', '< 2.0'
 gem 'paperclip-av-transcoder'
 gem 'paperclip-ffmpeg', '~> 1.2'
-# gem 'thin'
+gem 'thin'
 gem 'font-awesome-rails', '~> 4.5'
 gem 'normalize-rails'
 gem 'jquery-ui-rails'
@@ -32,10 +33,9 @@ end
 
 group :development do
   gem 'sqlite3'
-  gem "better_errors"
+  gem 'better_errors'
 end
 
 group :production do
-  gem 'pg', '0.17.1'
   gem 'rails_12factor'
 end
